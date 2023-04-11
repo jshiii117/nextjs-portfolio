@@ -59,7 +59,6 @@ export default async function HomePage() {
       <p className="my-5 max-w-[600px] text-neutral-800 dark:text-neutral-200">
         {bio()}
       </p>
-
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
         <li>
           <Link
@@ -76,7 +75,7 @@ export default async function HomePage() {
             href="/about"
           >
             <ArrowIcon />
-            <p className="h-7">More about me</p>
+            <p className="h-7">More Info</p>
           </Link>
         </li>
       </ul>

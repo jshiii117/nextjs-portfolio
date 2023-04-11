@@ -5,6 +5,9 @@ import {
   GmailIcon,
 } from "components/icons";
 import Image from "next/image";
+import Link from "next/link";
+import { IndividualPortfolioProject } from "./projects-box";
+import { projects } from "./projects";
 
 export default function PortfolioPage() {
   return (
@@ -12,40 +15,9 @@ export default function PortfolioPage() {
       <h1 className="font-bold text-3xl font-serif">Portfolio</h1>
       <div className="prose prose-neutral dark:prose-invert text-neutral-800 dark:text-neutral-200">
         <p>Some of my favourite past projects</p>
-        <div className="my-6  border border-gray-300 dark:border-gray-600 p-4 rounded-lg">
-          <h2 className="font-bold text-xl mb-2">Project Title</h2>
-          <img
-            src="https://unsplash.com/random"
-            alt="project image"
-            className="rounded-lg w-full md:w-1/2 mx-auto"
-          />
-          <p className="my-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
-            veniam aperiam sed officiis placeat ipsam dolore hic nesciunt!
-            Reiciendis mollitia unde omnis architecto a minima, reprehenderit
-            dolor dolorum. Ex, animi?.
-          </p>
-          <div className="flex items-center justify-start space-x-4">
-            <Image
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt="technology icon"
-              width={25}
-              height={25}
-            />
-            <Image
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt="technology icon"
-              width={25}
-              height={25}
-            />
-            <Image
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt="technology icon"
-              width={25}
-              height={25}
-            />
-          </div>
-        </div>
+        {projects.map((project) => (
+          <IndividualPortfolioProject project={project} key={project.title} />
+        ))}
         <div className="flex flex-col gap-2 md:flex-row md:gap-2">
           <a
             rel="noopener noreferrer"
