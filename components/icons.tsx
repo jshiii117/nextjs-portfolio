@@ -190,3 +190,133 @@ export function FirebaseIcon() {
     />
   );
 }
+
+export function MongoDbIcon() {
+  return (
+    <Image
+      src={
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg"
+      }
+      alt={`Logo`}
+      width={25}
+      height={25}
+    />
+  );
+}
+
+export function FigmaIcon() {
+  return (
+    <Image
+      src={
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+      }
+      alt={`Logo`}
+      width={25}
+      height={25}
+    />
+  );
+}
+
+export function FlaskIcon() {
+  return (
+    <Image
+      src={
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+      }
+      alt={`Logo`}
+      width={25}
+      height={25}
+    />
+  );
+}
+
+export function NodeJsIcon() {
+  return (
+    <Image
+      src={
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+      }
+      alt={`Logo`}
+      width={25}
+      height={25}
+    />
+  );
+}
+
+export function FlutterIcon() {
+  return (
+    <Image
+      src={
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+      }
+      alt={`Logo`}
+      width={25}
+      height={25}
+    />
+  );
+}
+
+export function DartIcon() {
+  return (
+    <Image
+      src={
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"
+      }
+      alt={`Logo`}
+      width={25}
+      height={25}
+    />
+  );
+}
+
+export function AndroidStudioIcon() {
+  return (
+    <Image
+      src={
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
+      }
+      alt={`Logo`}
+      width={25}
+      height={25}
+    />
+  );
+}
+
+export function AwsIcon() {
+  return (
+    <Image
+      src={
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+      }
+      alt={`Logo`}
+      width={25}
+      height={25}
+    />
+  );
+}
+
+export function UnityIcon() {
+  return (
+    <Image
+      src={
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+      }
+      alt={`Logo`}
+      width={25}
+      height={25}
+    />
+  );
+}
+
+export function CSharpIcon() {
+  return (
+    <Image
+      src={
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+      }
+      alt={`Logo`}
+      width={25}
+      height={25}
+    />
+  );
+}

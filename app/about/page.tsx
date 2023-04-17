@@ -22,17 +22,22 @@ export default function AboutPage() {
           my resourcefulness and efficiency
         </p>
         <p>
-          <Link href={"/portfolio"}>Through my projects</Link>, I've explored
-          various areas of development, such as creating a 2D multiplayer game
-          using Unity, releasing a mobile application with Flutter SDK, and
-          exploring full-stack web development.
+          <Link
+            href={"/portfolio"}
+            className="text-transparent bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text"
+          >
+            Through my projects
+          </Link>
+          , I've explored various areas of development, such as creating a 2D
+          multiplayer game using Unity, releasing a mobile application with
+          Flutter SDK, and exploring full-stack web development.
         </p>
-        <p>My goals for 2023 are to</p>
+        <p>My goals for 2023:</p>
         <ol>
           <li>Take more pictures</li>
           <li>Deadlift 600lbs</li>
           <li>Finally dunk a basketball</li>
-          <li>Learn more Mandarin</li>
+          <li>Work on my mandarin</li>
           <li>Build websites for 10 companies</li>
         </ol>
         <div className="flex flex-col gap-2 md:flex-row md:gap-2">

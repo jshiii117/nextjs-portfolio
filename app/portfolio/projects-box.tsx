@@ -16,8 +16,8 @@ export function IndividualPortfolioProject({
 }: IndividualPortfolioProjectProps) {
   return (
     <>
-      <div className="my-6 border border-gray-300 dark:border-gray-600 px-4 rounded-lg">
-        <h2 className="font-bold text-xl mb-2">{project.title}</h2>
+      <div className="my-6 border border-gray-300 dark:border-gray-600 px-4 rounded-lg bg-gradient-to-r from-purple-400 to-pink-500">
+        <h2 className="font-bold text-xl mt-5">{project.title}</h2>
         <p className="my-4">{project.description}</p>
         <div className="flex items-center justify-start space-x-4">
           {project.techLogos.map((techLogo, index) => (
@@ -26,19 +26,18 @@ export function IndividualPortfolioProject({
         </div>
         <div className="flex space-x-4 items-center">
           <Link
-            className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+            className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all no-underline"
             href={project.repoLink}
           >
             <ArrowIcon />
-            <p className="h-7">Repo</p>
+            <p className="h-7 underline decoration-current">Repo</p>
           </Link>
-
           <Link
-            className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+            className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all no-underline"
             href={project.demoLink}
           >
             <ArrowIcon />
-            <p className="h-7">Demo</p>
+            <p className="h-7 underline decoration-current">Demo</p>
           </Link>
         </div>
       </div>
