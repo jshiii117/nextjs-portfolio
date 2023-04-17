@@ -6,7 +6,7 @@ export const main = () => {
   return (
     <>
       Hey, my name is James, welcome to my corner of the internet. Currently I
-      am a <b>SWE intern at TELUS</b>. I am also pursuing a combined major in{" "}
+      am a <b>SWE intern at TELUS</b>. I am pursuing a combined major in{" "}
       <b>CS + Business @ UBC</b>
     </>
   );

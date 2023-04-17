@@ -8,7 +8,7 @@ export default async function sitemap() {
 
   const routes = ["", "/about", "/portfolio", "/blog", "/uses"].map(
     (route) => ({
-      url: `https://leerob.io${route}`,
+      url: `nextjs-portfolio-7ecjbtkpn-jshiii117.vercel.app${route}`,
       lastModified: new Date().toISOString().split("T")[0],
     })
   );

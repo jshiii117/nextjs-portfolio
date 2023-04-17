@@ -75,7 +75,7 @@ export default async function HomePage() {
             href="/about"
           >
             <ArrowIcon />
-            <p className="h-7">More Info</p>
+            <p className="h-7">More about me</p>
           </Link>
         </li>
       </ul>

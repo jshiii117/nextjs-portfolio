@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Sidebar from "../components/sidebar";
 import { Analytics } from "@vercel/analytics/react";
-import FavIcon from "app\favicon.ico";
 
 const kaisei = localFont({
   src: "../public/fonts/kaisei-tokumin-latin-700-normal.woff2",
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "James Shi",
     description: "Developer, writer, and creator.",
-    url: "https://leerob.io",
+    url: "https://nextjs-portfolio-7ecjbtkpn-jshiii117.vercel.app",
     siteName: "James Shi",
     images: [
       {
