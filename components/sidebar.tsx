@@ -18,52 +18,60 @@ const navItems = {
   "/blog": {
     name: "blog",
   },
-  "/guestbook": {
-    name: "guestbook",
+};
+
+const circleVariants = {
+  initial: {
+    scale: 0,
+    opacity: 0,
+  },
+  animate: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      delay: 0.2,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const textVariants = {
+  initial: {
+    y: -50,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      delay: 0.4,
+      ease: "easeInOut",
+    },
   },
 };
 
 function Logo() {
   return (
-    <Link aria-label="Lee Robinson" href="/">
-      <motion.svg
-        className="text-black dark:text-white h-[25px] md:h-[37px]"
-        width="25"
-        height="37"
-        viewBox="0 0 232 316"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <motion.path
-          initial={{
-            opacity: 0,
-            pathLength: 0,
-          }}
-          animate={{
-            opacity: 1,
-            pathLength: 1,
-          }}
-          transition={{
-            duration: 0.5,
-            type: "spring",
-            stiffness: 50,
-          }}
-          d="M39 316V0"
-          stroke="currentColor"
-          strokeWidth={78}
-        />
-        <motion.path
-          initial={{ x: -200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{
-            duration: 0.5,
-            type: "spring",
-            stiffness: 50,
-          }}
-          d="M232 314.998H129.852L232 232.887V314.998Z"
-          fill="currentColor"
-        />
-      </motion.svg>
+    <Link aria-label="James Shi" href="/">
+      <div className="flex items-center">
+        <motion.div
+          className="relative w-24 h-24 rounded-full bg-gradient-to-r from-purple-400 to-pink-500 mx-5"
+          variants={circleVariants}
+          initial="initial"
+          animate="animate"
+        >
+          <motion.h1
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl"
+            variants={textVariants}
+            initial="initial"
+            animate="animate"
+          >
+            js
+          </motion.h1>
+        </motion.div>
+      </div>
     </Link>
   );
 }

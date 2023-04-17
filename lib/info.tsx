@@ -1,4 +1,4 @@
-import Avatar from "../app/avatar.jpg";
+import Avatar from "../app/james_avatar.jpg";
 
 export const name = "James Shi";
 export const avatar = Avatar;

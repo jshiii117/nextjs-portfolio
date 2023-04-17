@@ -7,10 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        "gradient-primary": `linear-gradient(to right, ${theme(
-          "colors.pink"
-        )}, ${theme("colors.orange")})`,
       fontFamily: {
         serif: ["var(--font-kaisei)"],
       },

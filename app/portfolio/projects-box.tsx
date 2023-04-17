@@ -1,10 +1,4 @@
-import {
-  LinkedinIcon,
-  GitHubIcon,
-  ArrowIcon,
-  GmailIcon,
-} from "components/icons";
-import Image from "next/image";
+import { ArrowIcon } from "components/icons";
 import Link from "next/link";
 
 interface IndividualPortfolioProjectProps {
@@ -16,7 +10,7 @@ export function IndividualPortfolioProject({
 }: IndividualPortfolioProjectProps) {
   return (
     <>
-      <div className="my-6 border border-gray-300 dark:border-gray-600 px-4 rounded-lg bg-gradient-to-r from-purple-400 to-pink-500">
+      <div className="my-6 border border-gray-300 dark:border-gray-600 px-4 rounded-lg hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-500 transition-all duration-500 ease-in-out">
         <h2 className="font-bold text-xl mt-5">{project.title}</h2>
         <p className="my-4">{project.description}</p>
         <div className="flex items-center justify-start space-x-4">

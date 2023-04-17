@@ -4,8 +4,6 @@ import {
   ArrowIcon,
   GmailIcon,
 } from "components/icons";
-import Image from "next/image";
-import Link from "next/link";
 import { IndividualPortfolioProject } from "./projects-box";
 import { projects } from "./projects";
 
