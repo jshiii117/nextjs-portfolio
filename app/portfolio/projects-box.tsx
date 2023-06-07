@@ -19,13 +19,15 @@ export function IndividualPortfolioProject({
           ))}
         </div>
         <div className="flex space-x-4 items-center">
-          <Link
-            className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all no-underline"
-            href={project.repoLink}
-          >
-            <ArrowIcon />
-            <p className="h-7 underline decoration-current">Repo</p>
-          </Link>
+          {project.repoLink == "" ? null : (
+            <Link
+              className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all no-underline"
+              href={project.repoLink}
+            >
+              <ArrowIcon />
+              <p className="h-7 underline decoration-current">Repo</p>
+            </Link>
+          )}
           <Link
             className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all no-underline"
             href={project.demoLink}

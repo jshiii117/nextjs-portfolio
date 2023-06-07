@@ -29,6 +29,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "[WIP] Jiamei Overseas Website 💻🙆",
+    description:
+      "Designed and developed a new company website for an immigration consulting firm using Next.js 13 and ChakraUI. Being my biggest web-dev project to date, I challenged myself to learn a lot of new concepts such as mobile-first design, web optimization, and many of Next 13's features that I previously did not have a chance to play with",
+    techLogos: [<NextIcon />],
+    repoLink: "",
+    demoLink: "https://jiamei-overseas-jshiii117.vercel.app/",
+  },
+  {
     title: "NextJS Portfolio Website 💻🙆‍♂️✨",
     description:
       "Built a personal portfolio website using React, Next.js 13, and TailwindCSS.",
