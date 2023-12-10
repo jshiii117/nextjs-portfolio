@@ -1,13 +1,13 @@
-import Avatar from "../app/james_avatar.jpg";
+import Avatar from '../app/james_avatar.jpg';
 
-export const name = "James Shi";
+export const name = 'James Shi';
 export const avatar = Avatar;
 export const main = () => {
   return (
     <>
       Hey, my name is James, welcome to my corner of the internet. Currently I
-      am a <b>SWE intern at TELUS</b>. I am pursuing a combined major in{" "}
-      <b>CS + Business @ UBC</b>
+      am a <b>SWE intern at Aquatic Informatics</b>. I am pursuing a combined
+      major in <b>CS + Business @ UBC</b>
     </>
   );
 };
